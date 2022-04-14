@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Калькулятор</title>
+</head>
+
+<body>
+
+  <div class="calc">
+
+    <div class="calc__header">
+      <div class="calc__header-image"></div>
+      <h1>Калькулятор матрицы</h1>
+    </div>
+    <div class="container">
+
+      <form id="input-form" class="calc__input-form">
+        <div class="calc__input-text-wrap">
+          <div class="input-text">
+            <input type="text" minlength="3" required value="" data-input="surname" placeholder="Фамилия">
+          </div>
+
+          <div class="input-text">
+            <input type="text" value="" required minlength="3" data-input="name" placeholder="Имя">
+          </div>
+          <div class="input-text">
+            <input type="text" value="" required minlength="3" data-input="patronymic" placeholder="Отчество">
+          </div>
+          <div class="input-text">
+            <input type="text" value="" required minlength="3" data-input="surname-father"
+              placeholder="Фамилия отца">
+          </div>
+
+          <div class="input-text">
+            <input type="text" value="" required minlength="3" data-input="surname-mother"
+              placeholder="Фамилия матери">
+          </div>
+
+          <!-- for inputDate -->
+          <!-- <div class="input-text">
+            <input type="date"  value="" data-input="birthday"
+              placeholder="Date"> -->
+
+          <div class="input-text">
+            <input type="text"  value="" data-input="birthday" placeholder="Дата рождения дд.мм.гггг">
+          </div>
+        </div>
+
+        <div class="calc__input-radio-submit-wrap">
+          <div class="calc__input-radio-wrap">
+            <span>ПОЛ:</span>
+            <label for="w">ЖЕНСКИЙ</label>
+            <input type="radio" name="sex" checked id="w">
+            <label for="m">МУЖСКОЙ</label>
+            <input type="radio" name="sex" id="m">
+          </div>
+          <div class="calc__submit">
+            <button id="submit">РАССЧИТАТЬ</button>
+          </div>
+        </div>
+
+
+
+
+      </form>
+
+      <div class="calc__result hide">
+        <div class="result__img">
+
+
+
+        </div>
+        <div class="result__purpose">
+
+        </div>
+      </div>
+
+    </div>
+    <!-- container -->
+  </div>
+
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+</html>
